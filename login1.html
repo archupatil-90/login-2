@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="login1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="main">
+        <div class="form-box">
+            <div class="button-box">
+                
+                <button class="toggle-btn" onclick="login()"  >Login</button>
+                <button class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icon">
+                <i class="fab fa-facebook-f "></i>    
+              <i class="fab fa-twitter icon"></i>
+              <i class="fab fa-google-plus-g icon"></i>
+
+
+            </div>
+            <div class="input-group" id="login">
+            <input type="text" class="input-field" placeholder="Username" required>
+            <input type="text" class="input-field"  placeholder="Passwor" required>
+            <input type="checkbox" id="ch-box"><span>Remember Password</span>
+            <button class="submit-btn"> Login</button>
+            <a>Forgot Password</a>
+
+             </div> 
+             <div class="input-group" id="register">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field"  placeholder="Email Id" required>
+                <input type="text" class="input-field"  placeholder="Enter Passaword" required>
+
+                <input type="checkbox" id="ch-box"><span>I Agree to Terms & condition</span>
+                <button class="submit-btn"> Register</button>
+    
+                 </div> 
+        </div>
+    </div>
+
+
+
+    <script>
+        function register(){
+            
+            document.getElementById("login").style.top="475px";
+            document.getElementById("register").style.top="175px";
+            
+
+        }
+        function login(){
+            document.getElementById("login").style.top="175px";
+            document.getElementById("register").style.top="475px";
+           
+
+        }
+    </script>
+</body>
+</html>
